@@ -6,7 +6,8 @@ public class StackCalculator
         ArrayStack stacks = new ArrayStack(100);
         String[] characters = expression.split(" ");
 
-        for (String character : characters) {
+        for (int i = 0; i<characters.length;i++) {
+            character = characters[i];
             if (character.equals("(")) {
                 // Do nothing explicitly
             } else if (character.equals("+") || character.equals("-") ||
