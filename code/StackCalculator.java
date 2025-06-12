@@ -30,7 +30,6 @@ public class StackCalculator
 
                 stacks.pushOperand(result);
             } else {
-                // Must be a number
                 stacks.pushOperand(Double.parseDouble(character));
             }
         }
@@ -40,6 +39,6 @@ public class StackCalculator
 
     public static void main(String[] args) {
         String expression = "( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )";
-        System.out.println(evaluate(expression)); // Output: 101.0
+        System.out.println(evaluate(expression)); 
     }
 }
