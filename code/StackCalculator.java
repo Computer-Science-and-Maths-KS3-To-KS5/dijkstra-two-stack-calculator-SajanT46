@@ -9,7 +9,6 @@ public class StackCalculator
         for (int i = 0; i<characters.length;i++) {
             character = characters[i];
             if (character.equals("(")) {
-                // Do nothing explicitly
             } else if (character.equals("+") || character.equals("-") ||
                     character.equals("*") || character.equals("/")) {
                 stacks.pushOperation(character);
